@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80A8E0E4"
+    android:layout_marginTop="-60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".edit_fragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:cardCornerRadius="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:background="#02B0BB"
+            android:paddingBottom="20dp"
+
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/montserrat"
+                android:letterSpacing="0.033"
+                android:text="Edit Debt Entry !"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/DataDelete"
+                android:layout_width="35dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_baseline_delete_24"
+                app:layout_constraintBottom_toBottomOf="@+id/textView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView"
+                app:tint="#FBFDFD" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:paddingTop="20dp"
+        android:layout_height="624dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView4"
+            android:backgroundTint="#F5F5F8"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:foregroundGravity="center"
+            app:cardCornerRadius="500dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="185dp"
+                android:layout_height="150dp"
+                android:src="@drawable/personimage"
+                tools:layout_editor_absoluteY="20dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="#E6F5F6"
+            app:cardCornerRadius="35dp"
+            app:layout_constraintTop_toBottomOf="@+id/cardView4">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="#E6F5F6">
+
+                <EditText
+                    android:id="@+id/EDITpersonName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:background="#E6F5F6"
+
+                    android:fontFamily="@font/montserrat"
+                    android:letterSpacing="0.034"
+                    android:text="Shobhit Singh"
+                    android:textAllCaps="true"
+                    android:textColor="#02969F"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/EDITpayAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="35dp"
+                    android:background="#E6F5F6"
+                    android:fontFamily="@font/montserrat"
+                    android:letterSpacing="0.034"
+                    android:text="100dp"
+                    android:textAllCaps="true"
+                    android:textColor="#02969F"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/EDITpersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/EDITpersonName" />
+
+                <EditText
+                    android:id="@+id/EDITeditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#E6F5F6"
+                    android:fontFamily="monospace"
+                    android:gravity="start"
+                    android:padding="20dp"
+                    android:textAllCaps="false"
+                    android:textColor="#848B8C"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/EDITpersonName" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView5"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:cardCornerRadius="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView6">
+
+            <Button
+                android:id="@+id/EDITsave_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#02B0BB"
+                android:backgroundTint="#02ABB6"
+                android:text="Save Entry !" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
